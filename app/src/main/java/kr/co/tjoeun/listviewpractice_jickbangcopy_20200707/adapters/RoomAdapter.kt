@@ -30,7 +30,7 @@ class RoomAdapter(val mContext: Context, val resId:Int, val mList:List<Room>):
         val adressTxt = row.findViewById<TextView>(R.id.adressTxt)
         val desTxt = row.findViewById<TextView>(R.id.desTxt)
 
-        priceTxt.text= data.price.toString()
+        priceTxt.text= data.getFormattedPrice()
         adressTxt.text= data.address.toString()
         desTxt.text= data.description.toString()
 
